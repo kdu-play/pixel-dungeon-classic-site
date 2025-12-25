@@ -23,7 +23,9 @@ const urls = ref([
 <template>
   <ContentBx appName="Pixel Dungeon"
     description="Pixel Dungeon (Classic) is a traditional roguelike game with pixel-art graphics and simple interface."
-    androidLink="" :imgSrc="imgSrc" />
+    androidLink="https://gitlab.com/kdu-play/archive/-/raw/main/Pixel-Dungeon-Classic/Pixel-Dungeon-Classic-3-v1.1.1-release.apk?inline=false"
+    desktopLink="https://gitlab.com/kdu-play/archive/-/raw/main/Pixel-Dungeon-Classic-GDX/pixel-dungeon-classic-gdx-desktop-1-v1.0.0.jar.zip?inline=false"
+    :imgSrc="imgSrc" />
 
   <Sci :urls="urls" />
 </template>
