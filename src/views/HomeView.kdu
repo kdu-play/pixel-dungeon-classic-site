@@ -1,0 +1,29 @@
+<script setup>
+import { ref } from 'kdu';
+
+import ContentBx from '../components/ContentBx.kdu'
+import Sci from '../components/Sci.kdu';
+
+const imgSrc = ref([
+  { url: "preview_1.png" },
+  { url: "preview_2.png" },
+  { url: "preview_3.png" },
+  { url: "preview_4.png" },
+  { url: "preview_5.png" },
+  { url: "preview_6.png" },
+]);
+
+const urls = ref([
+  { link: "mailto:nkduy.dev@gmail.com", icon: "mail-open" },
+  { link: "https://www.facebook.com/khanhduy1407", icon: "logo-facebook" },
+  { link: "https://github.com/kdu-play", icon: "logo-github" },
+]);
+</script>
+
+<template>
+  <ContentBx appName="Pixel Dungeon"
+    description="Pixel Dungeon (Classic) is a traditional roguelike game with pixel-art graphics and simple interface."
+    androidLink="" :imgSrc="imgSrc" />
+
+  <Sci :urls="urls" />
+</template>
